@@ -339,7 +339,6 @@
 
 .reservaciones-cont p {
     text-align: center;
-    width: 800px;
     margin: auto;
     padding-bottom: 50px;
 }
@@ -518,14 +517,19 @@
         margin: 15px 0;
     }
 
+    /*PAGINA RESERVACIONES*/
+    .button p {
+        text-align: center;
+    }
+
     /* PAGINA CONTACTO */
 
     .contact-input {
-        width: 450px;
+        width: 400px;
     }
 
     .contact-input textarea {
-        min-width: 447px;
+        min-width: 400px;
     }
 
     .contact-container {
@@ -539,8 +543,8 @@
     }
 
     .ubi iframe {
-        width: 450px;
-        height: 300px;
+        width: 400px;
+        height: 250px;
     }
 
 }
