@@ -1,0 +1,59 @@
+/*SECTION DE LA PAGINA*/
+
+.block-flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.section-comidas h2 {
+    text-align: center;
+    font-size: 34px;
+    padding: 30px;
+}
+
+.block-comida {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.block-comida img {
+    width: 300px;
+    height: 250px;
+}
+
+.block-comida h3 {
+    text-align: center;
+    font-size: 20px;
+}
+
+.block-comida p {
+    text-align: center;
+}
+
+.section-bebidas h2 {
+    text-align: center;
+    font-size: 34px;
+    padding: 30px;
+}
+
+.block-bebida {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.block-bebida img {
+    width: 200px;
+    height: 300px;
+}
+
+.block-bebida h3 {
+    text-align: center;
+    font-size: 20px;
+}
+
+.block-bebida p {
+    text-align: center;
+}

@@ -1,0 +1,39 @@
+/* SECTION OPINIONES */
+
+.op1 {
+    background-color: #565;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+.op1 img {
+    width: 300px;
+}
+
+.op1-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 30px;
+}
+
+.section-opiniones h3 {
+    text-align: center;
+    font-size: 25px;
+    padding: 30px;
+}
+
+.op1 h4 {
+    font-size: 24px;
+}
+
+.op1 p {
+    display: block;
+}
+
+.img {
+    display: flex;
+    flex-direction: row-reverse;
+}

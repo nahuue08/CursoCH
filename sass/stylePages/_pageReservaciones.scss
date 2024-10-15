@@ -1,0 +1,77 @@
+/*PAGINA RESERVACIONES*/
+
+.reservaciones-cont {
+    background-color: #2b2c2c
+}
+
+.reservaciones-input {
+    height: 300px;
+    display: flex;
+}
+
+.reserv-tamaño {
+    width: 33%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.reserv-tamaño h2 {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.reserv-tamaño input {
+    width: 40%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.reserv-fecha {
+    width: 33%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.reserv-fecha h2 {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.reserv-fecha input {
+    width: 40%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.reserv-horario {
+    width: 34%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.reserv-horario h2 {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.reserv-horario input {
+    width: 40%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.button {
+    width: 100px;
+    padding: 5px;
+    margin-left: 46%;
+    margin-bottom: 50px;
+}
+
+.reservaciones-cont p {
+    text-align: center;
+    margin: auto;
+    padding-bottom: 50px;
+}

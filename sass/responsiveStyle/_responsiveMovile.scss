@@ -1,0 +1,113 @@
+/* DISEÑIO RESPONSIVO */
+
+@media (max-width: 768px) {
+
+    /*HEADER*/
+    .mostrar-menu,
+    .esconder-menu {
+        display: block;
+    }
+
+    .navbar {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #565;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0;
+        z-index: 100;
+        transition: 0.8s;
+    }
+
+    .navbar ul {
+        display: block;
+    }
+
+    .navbar ul li {
+        padding: 20px;
+    }
+
+    .esconder-menu {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+
+    #check:checked ~ .navbar {
+        right: 0;
+    }
+
+    /*SECTION COMIDAS*/
+
+    .block-flex {
+        flex-direction: column;
+    }
+
+    .op1 {
+        flex-direction: column;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-nav {
+        padding: 30px 90px;
+    }
+
+    /*PAGINA MENÚ*/
+
+    .menu-cont {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .menu-cont img {
+        margin: 15px 0;
+    }
+
+    .menu-cont_beb {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .menu-cont_beb img {
+        margin: 15px 0;
+    }
+
+    /*PAGINA RESERVACIONES*/
+    .button p {
+        text-align: center;
+    }
+
+    /* PAGINA CONTACTO */
+
+    .contact-input {
+        width: 400px;
+    }
+
+    .contact-input textarea {
+        min-width: 400px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    /* PAGINA UBICACION */
+
+    .header-titulo {
+        text-align: center;
+    }
+
+    .ubi iframe {
+        width: 400px;
+        height: 250px;
+    }
+
+}

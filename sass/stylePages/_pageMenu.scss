@@ -1,0 +1,45 @@
+/*MENU*/
+
+.main-menu {
+    background-color: #565;
+}
+
+.menu-comidas h2 {
+    text-align: center;
+    padding: 20px;
+    color: aliceblue;
+}
+
+.menu-cont {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.p {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-cont img {
+    width: 150px;
+    height: 100px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+}
+
+.menu-cont_beb {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.menu-cont_beb img {
+    width: 100px;
+    height: 150px;
+    margin-right: 125px;
+    margin-bottom: 20px;
+}
+
+.menu-text {
+    margin: auto;
+    color: aliceblue;
+}
