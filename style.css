@@ -16,56 +16,42 @@
     background-repeat: no-repeat;
 }
 
-.navbar {
-    background: black;
-    height: 65px;
-    width: 100%;
-}
-
-.enlace {
-    position: absolute;
-    padding: 20px 50px;
+.header-conteiner {
+    height: 80px;
+    background: #2b2c2c;
+    padding: 0 15px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
-    height: 40px;
+    width: 90px;
 }
 
 .navbar ul {
-    float: right;
-    margin-right: 20px;
-}
-
-.navbar ul li {
-    display: inline-block;
-    line-height: 67px;
-    margin: 0 5px;
+    display: flex
 }
 
 .navbar ul li a {
-    color: aliceblue;
-    font-size: 18px;
-    padding: 7px 13px;
+    color: #fff;
     text-transform: uppercase;
+    padding: 0 20px;
+    transition: 0.4s;
 }
 
 .navbar ul li a:hover {
-    border: 2px solid gray;
-    transition: .5s;
     color: #565;
 }
 
-.check-btn {
-    font-size: 30px;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
+.mostrar-menu,
+.esconder-menu {
+    font-size: 35px;
     cursor: pointer;
     display: none;
-}
-
-.check-btn img {
-    height: 35px;
+    transition: 0.4s;
+    order: 1;
 }
 
 #check {
@@ -89,6 +75,7 @@
     color: antiquewhite;
     font-size: 18px;
     margin-top: 10px;
+    text-align: center;
 }
 
 /*SECTION DE LA PAGINA*/
@@ -108,10 +95,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 20px;
 }
 
 .block-comida img {
     width: 300px;
+    height: 250px;
 }
 
 .block-comida h3 {
@@ -136,7 +125,8 @@
 }
 
 .block-bebida img {
-    width: 300px;
+    width: 200px;
+    height: 300px;
 }
 
 .block-bebida h3 {
@@ -153,6 +143,7 @@
 .op1 {
     background-color: #565;
     display: flex;
+    align-items: center;
     padding: 20px;
     margin: 20px;
 }
@@ -165,6 +156,7 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin: 30px;
 }
 
 .section-opiniones h3 {
@@ -222,6 +214,9 @@
     padding: 30px 90px;
 }
 
+.footer-ubi {
+    padding: 30px 20px;
+}
 
 /*MENU*/
 
@@ -229,13 +224,10 @@
     background-color: #565;
 }
 
-.main-menu img {
-    width: 170px;
-}
-
 .menu-comidas h2 {
     text-align: center;
     padding: 20px;
+    color: aliceblue;
 }
 
 .menu-cont {
@@ -249,12 +241,27 @@
 }
 
 .menu-cont img {
+    width: 150px;
+    height: 100px;
     margin-right: 100px;
+    margin-bottom: 20px;
+}
+
+.menu-cont_beb {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.menu-cont_beb img {
+    width: 100px;
+    height: 150px;
+    margin-right: 125px;
     margin-bottom: 20px;
 }
 
 .menu-text {
     margin: auto;
+    color: aliceblue;
 }
 
 
@@ -343,27 +350,54 @@
     background-color: #565;
     padding-top: 50px;
     display: flex;
-    flex-direction: row-reverse;
 }
 
 .contact-input {
-    border: 2px solid black;
-    width: 900px;
-    height: 30em;
-    margin-top: 10px;
-    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 30px;
 }
 
-.con-input {
-    text-align: center;
-    padding: 40px;
+.contact-input .campo, textarea {
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 15px;
+    border: 1px solid #2b2c2c;
+    margin-bottom: 20px;
+}
+
+.contact-input textarea {
+    max-width: 530px;
+    min-width: 530px;
+    min-height: 140px;
+    max-height: 150px;
+}
+
+.btn-enviar {
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    background: #2b2c2c;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.btn-enviar:hover {
+    background: #565;
 }
 
 .contact-info {
-    width: 300px;
-    margin-right: 50px;
+    width: 400px;
+    margin: auto;
+    margin-bottom: 50px;
     text-align: center;
-    margin-top: 70px;
+}
+
+.contact-info ul li {
+    margin-bottom: 15px;
 }
 
 .contact-info h2 {
@@ -404,43 +438,111 @@
 
 /* DISEÑIO RESPONSIVO */
 
-@media (max-width: 858px) {
-    .check-btn {
+@media (max-width: 768px) {
+
+    /*HEADER*/
+    .mostrar-menu,
+    .esconder-menu {
         display: block;
     }
-    ul {
+
+    .navbar {
         position: fixed;
         width: 100%;
         height: 100vh;
         background: #565;
-        top: 80px;
-        left: -100%;
+        right: -100%;
+        top: 0;
         text-align: center;
-        transition: all .5s;
+        padding: 100px 0;
+        z-index: 100;
+        transition: 0.8s;
     }
 
-    .navbar ul li a {
-        font-size: 20px;
+    .navbar ul {
+        display: block;
     }
 
-    li a:hover {
-        background: none;
-        color: red;
+    .navbar ul li {
+        padding: 20px;
     }
 
-    #check:checked ~ ul {
-        left: 0;
+    .esconder-menu {
+        position: absolute;
+        top: 40px;
+        right: 40px;
     }
 
-    .footer-container{
+    #check:checked ~ .navbar {
+        right: 0;
+    }
+
+    /*SECTION COMIDAS*/
+
+    .block-flex {
+        flex-direction: column;
+    }
+
+    .op1 {
+        flex-direction: column;
+    }
+
+    .footer-container {
         flex-direction: column;
         text-align: center;
     }
-    
-    .footer-container p {
-        margin: 0;
-        padding: 0;
+
+    .footer-nav {
+        padding: 30px 90px;
     }
+
+    /*PAGINA MENÚ*/
+
+    .menu-cont {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .menu-cont img {
+        margin: 15px 0;
+    }
+
+    .menu-cont_beb {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .menu-cont_beb img {
+        margin: 15px 0;
+    }
+
+    /* PAGINA CONTACTO */
+
+    .contact-input {
+        width: 450px;
+    }
+
+    .contact-input textarea {
+        min-width: 447px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    /* PAGINA UBICACION */
+
+    .header-titulo {
+        text-align: center;
+    }
+
+    .ubi iframe {
+        width: 450px;
+        height: 300px;
+    }
+
 }
 
 

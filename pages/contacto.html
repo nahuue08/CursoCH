@@ -3,20 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../style.css">
     <title>Document</title>
 </head>
 <body>
     <header class="header">
-        <div class="menu container">
+        <div class="header-conteiner">
+            <a href="#" class="enlace">
+                <img src="https://www.pngall.com/wp-content/uploads/8/Restaurant-Logo-PNG-Photo.png" class="logo">
+            </a>
+            <input type="checkbox" id="check">
+            <label for="check" class="mostrar-menu">
+                <i class="bi bi-list"></i>
+            </label>
             <nav class="navbar">
-                <input type="checkbox" id="check">
-                <label for="check" class="check-btn">
-                    <img src="images/menu.png" alt="">
-                </label>
-                <a href="#" class="enlace">
-                    <img src="#" alt="LOGO" class="logo">
-                </a>
                 <ul>
                     <li><a href="../index.html">Inicio</a></li>
                     <li><a href="menu.html">Menú</a></li>
@@ -24,6 +25,9 @@
                     <li><a href="contacto.html">Contacto</a></li>
                     <li><a href="ubicacion.html">Ubicación</a></li>
                 </ul>
+                <label for="check" class="esconder-menu">
+                    <i class="bi bi-x"></i>
+                </label>
             </nav>
         </div>
 
@@ -34,64 +38,84 @@
 
     <main>
         <section class="contact-container">
-            <div class="contact-input">
-                <div class="con-input">
-                    <h2>Nombre</h2>
-                    <input type="text">
-                    <h2>Email</h2>
-                    <input type="email">
-                    <h2>Telefono</h2>
-                    <input type="text">
-                    <h2>Mandanos un mensaje</h>
-                    <input type="text">
-                </div>  
-            </div>
+            <form action="#" autocomplete="off" class="contact-input">
+                <input type="text" name="nombre" placeholder="Ingresa tu Nombre" class="campo">
+                <input type="email" name="email" placeholder="Ingresa tu Correo" class="campo">
+                <textarea name="Mensaje" placeholder="Ingresa tu Mensaje" id=""></textarea>
+                <input type="submit" name="enviar" value="enviar mensaje" class="btn-enviar">
+            </form>
+
             <div class="contact-info">
                 <h2>Contactanos</h2>
                 <h3>Email</h3>
                 <p>
-                    comidas@.com.ar
+                    restaurant@gmail.com
                 </p>
                 <h2>Nuestras Redes</h2>
-                <img src="#" alt="INSTAGRAM">
-                <p>
-                    Instagram
-                </p>
-                <img src="#" alt="FACEBOOK">
-                <p>
-                    Facebook
-                </p>
+                <ul>
+                    <li>
+                        <i class="bi bi-whatsapp">
+                            +54 9 2617867463
+                        </i>
+                    </li>
+                    <li>
+                        <i class="bi bi-instagram">
+                            RestoMDZ
+                        </i>
+                    </li>
+                    <li>
+                        <i class="bi bi-facebook">
+                            Restaurant MDZ
+                        </i>
+                    </li>
+                </ul>
             </div>
         </section>
     </main>
+
     <footer class="footer">
-        <div>
-            <div class="footer-container">
-                <div class="footer-nav">
-                    <h3>NAVEGACIÓN</h3>
-                    <ul>
-                        <li><a href="#">Nosotros</a></li>
-                        <li><a href="#">Contacto</a></li>
-                        <li><a href="#">Locales</a></li>
-                        <li><a href="#">Preguntas Frecuentes</a></li>
-                    </ul>
-                </div>
-                <div class="footer-cont">
-                    <h3>CONTACTANOS</h3>
-                    <ul>
-                        <li>Emali: restaurant@.com.ar</a></li>
-                        <li>TEL: +54 2615364532</li>
-                        <li><a href="#">Ubicación</a></li>
-                    </ul>
-                </div>
-                <div class="footer-redes">
-                    <h3>NUESTRAS REDES</h3>
-                    <ul>
-                        <li>Instagram</li>
-                        <li>Facebook</li>
-                        <li>WhatsApp</li>
-                    </ul>
-                </div>
+        <div class="footer-container">
+            <div class="footer-nav">
+                <h3>NAVEGACIÓN</h3>
+                <ul>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Locales</a></li>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                </ul>
+            </div>
+            <div class="footer-cont">
+                <h3>CONTACTANOS</h3>
+                <ul>
+                    <li>Emali: restaurant@.com.ar</a></li>
+                    <li>TEL: +54 2615364532</li>
+                </ul>
+            </div>
+            <div class="footer-redes">
+                <h3>NUESTRAS REDES</h3>
+                <ul>
+                    <li>
+                        <i class="bi bi-whatsapp">
+                            +54 9 2617867463
+                        </i>
+                    </li>
+                    <li>
+                        <i class="bi bi-facebook">
+                            Restaurant MDZ
+                        </i>
+                    </li>
+                    <li>
+                        <i class="bi bi-instagram">
+                            RestoMDZ
+                        </i>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-ubi">
+                <h3>UBICACIÓN</h3>
+                <p>
+                    Av. San Martín 1110, Ciudad de Mendoza, Argentina.
+                </p>
             </div>
         </div>
     </footer>
