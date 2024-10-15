@@ -1,446 +1,446 @@
 @charset "UTF-8";
 /*IMPORT RESET*/
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
 
 /*HEADER DE LA PAGINA*/
 .header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/fon.jpeg);
-  height: 500px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/fon.jpeg);
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .header-conteiner {
-  height: 80px;
-  background: #2b2c2c;
-  padding: 0 15px;
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    height: 80px;
+    background: #2b2c2c;
+    padding: 0 15px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
-  width: 90px;
+    width: 90px;
 }
 
 .navbar ul {
-  display: flex;
+    display: flex;
 }
 
 .navbar ul li a {
-  color: #fff;
-  text-transform: uppercase;
-  padding: 0 20px;
-  transition: 0.4s;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0 20px;
+    transition: 0.4s;
 }
 
 .navbar ul li a:hover {
-  color: #565;
+    color: #565;
 }
 
 .mostrar-menu,
 .esconder-menu {
-  font-size: 35px;
-  cursor: pointer;
-  display: none;
-  transition: 0.4s;
-  order: 1;
+    font-size: 35px;
+    cursor: pointer;
+    display: none;
+    transition: 0.4s;
+    order: 1;
 }
 
 #check {
-  display: none;
+    display: none;
 }
 
 .header-titulo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
 }
 
 .header-titulo h1 {
-  font-size: 50px;
-  color: aliceblue;
-  padding-bottom: 15px;
+    font-size: 50px;
+    color: aliceblue;
+    padding-bottom: 15px;
 }
 
 .header-titulo p {
-  color: antiquewhite;
-  font-size: 18px;
-  margin-top: 10px;
-  text-align: center;
+    color: antiquewhite;
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: center;
 }
 
 /* FOOTER SECTION */
 .footer {
-  background-color: black;
-  color: aliceblue;
+    background-color: black;
+    color: aliceblue;
 }
 
 .footer ul li a {
-  color: aliceblue;
+    color: aliceblue;
 }
 
 .footer-container {
-  display: flex;
-  padding: 20px;
+    display: flex;
+    padding: 20px;
 }
 
 .footer-container h3 {
-  margin-bottom: 15px;
+    margin-bottom: 15px;
 }
 
 .footer-nav {
-  padding: 30px 90px 30px 20px;
+    padding: 30px 90px 30px 20px;
 }
 
 .footer-container ul li {
-  padding-bottom: 5px;
+    padding-bottom: 5px;
 }
 
 .footer-cont {
-  padding: 30px 90px;
+    padding: 30px 90px;
 }
 
 .footer-redes {
-  padding: 30px 90px;
+    padding: 30px 90px;
 }
 
 .footer-ubi {
-  padding: 30px 20px;
+    padding: 30px 20px;
 }
 
 /*SECTION DE LA PAGINA*/
 .block-flex {
-  display: flex;
-  justify-content: space-around;
+    display: flex;
+    justify-content: space-around;
 }
 
 .section-comidas h2 {
-  text-align: center;
-  font-size: 34px;
-  padding: 30px;
+    text-align: center;
+    font-size: 34px;
+    padding: 30px;
 }
 
 .block-comida {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
 }
 
 .block-comida img {
-  width: 300px;
-  height: 250px;
+    width: 300px;
+    height: 250px;
 }
 
 .block-comida h3 {
-  text-align: center;
-  font-size: 20px;
+    text-align: center;
+    font-size: 20px;
 }
 
 .block-comida p {
-  text-align: center;
+    text-align: center;
 }
 
 .section-bebidas h2 {
-  text-align: center;
-  font-size: 34px;
-  padding: 30px;
+    text-align: center;
+    font-size: 34px;
+    padding: 30px;
 }
 
 .block-bebida {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .block-bebida img {
-  width: 200px;
-  height: 300px;
+    width: 200px;
+    height: 300px;
 }
 
 .block-bebida h3 {
-  text-align: center;
-  font-size: 20px;
+    text-align: center;
+    font-size: 20px;
 }
 
 .block-bebida p {
-  text-align: center;
+    text-align: center;
 }
 
 /* SECTION OPINIONES */
 .op1 {
-  background-color: #565;
-  display: flex;
-  align-items: center;
-  padding: 20px;
-  margin: 20px;
+    background-color: #565;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
 }
 
 .op1 img {
-  width: 300px;
+    width: 300px;
 }
 
 .op1-text {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  margin: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 30px;
 }
 
 .section-opiniones h3 {
-  text-align: center;
-  font-size: 25px;
-  padding: 30px;
+    text-align: center;
+    font-size: 25px;
+    padding: 30px;
 }
 
 .op1 h4 {
-  font-size: 24px;
+    font-size: 24px;
 }
 
 .op1 p {
-  display: block;
+    display: block;
 }
 
 .img {
-  display: flex;
-  flex-direction: row-reverse;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 /* PAGINA MENU */
 /*MENU*/
 .main-menu {
-  background-color: #565;
+    background-color: #565;
 }
 
 .menu-comidas h2 {
-  text-align: center;
-  padding: 20px;
-  color: aliceblue;
+    text-align: center;
+    padding: 20px;
+    color: aliceblue;
 }
 
 .menu-cont {
-  display: flex;
-  flex-direction: row-reverse;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 .p {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .menu-cont img {
-  width: 150px;
-  height: 100px;
-  margin-right: 100px;
-  margin-bottom: 20px;
+    width: 150px;
+    height: 100px;
+    margin-right: 100px;
+    margin-bottom: 20px;
 }
 
 .menu-cont_beb {
-  display: flex;
-  flex-direction: row-reverse;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 .menu-cont_beb img {
-  width: 100px;
-  height: 150px;
-  margin-right: 125px;
-  margin-bottom: 20px;
+    width: 100px;
+    height: 150px;
+    margin-right: 125px;
+    margin-bottom: 20px;
 }
 
 .menu-text {
-  margin: auto;
-  color: aliceblue;
+    margin: auto;
+    color: aliceblue;
 }
 
 /* PAGINA RESERVACIONES */
 /*PAGINA RESERVACIONES*/
 .reservaciones-cont {
-  background-color: #2b2c2c;
+    background-color: #2b2c2c;
 }
 
 .reservaciones-input {
-  height: 300px;
-  display: flex;
+    height: 300px;
+    display: flex;
 }
 
 .reserv-tamaño {
-  width: 33%;
-  height: 80%;
-  display: flex;
-  flex-direction: column;
+    width: 33%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
 }
 
 .reserv-tamaño h2 {
-  text-align: center;
-  margin-top: 100px;
+    text-align: center;
+    margin-top: 100px;
 }
 
 .reserv-tamaño input {
-  width: 40%;
-  margin: auto;
-  margin-top: 30px;
+    width: 40%;
+    margin: auto;
+    margin-top: 30px;
 }
 
 .reserv-fecha {
-  width: 33%;
-  height: 80%;
-  display: flex;
-  flex-direction: column;
+    width: 33%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
 }
 
 .reserv-fecha h2 {
-  text-align: center;
-  margin-top: 100px;
+    text-align: center;
+    margin-top: 100px;
 }
 
 .reserv-fecha input {
-  width: 40%;
-  margin: auto;
-  margin-top: 30px;
+    width: 40%;
+    margin: auto;
+    margin-top: 30px;
 }
 
 .reserv-horario {
-  width: 34%;
-  height: 80%;
-  display: flex;
-  flex-direction: column;
+    width: 34%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
 }
 
 .reserv-horario h2 {
-  text-align: center;
-  margin-top: 100px;
+    text-align: center;
+    margin-top: 100px;
 }
 
 .reserv-horario input {
-  width: 40%;
-  margin: auto;
-  margin-top: 30px;
+    width: 40%;
+    margin: auto;
+    margin-top: 30px;
 }
 
 .button {
-  width: 100px;
-  padding: 5px;
-  margin-left: 46%;
-  margin-bottom: 50px;
+    width: 100px;
+    padding: 5px;
+    margin-left: 46%;
+    margin-bottom: 50px;
 }
 
 .reservaciones-cont p {
-  text-align: center;
-  margin: auto;
-  padding-bottom: 50px;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 50px;
 }
 
 /* PAGINA CONTACTO */
 /* PAGINA CONTACTO */
 .contact-container {
-  background-color: #565;
-  padding-top: 50px;
-  display: flex;
+    background-color: #565;
+    padding-top: 50px;
+    display: flex;
 }
 
 .contact-input {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 30px;
 }
 
 .contact-input .campo, textarea {
-  width: 100%;
-  padding: 15px 10px;
-  font-size: 15px;
-  border: 1px solid #2b2c2c;
-  margin-bottom: 20px;
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 15px;
+    border: 1px solid #2b2c2c;
+    margin-bottom: 20px;
 }
 
 .contact-input textarea {
-  max-width: 530px;
-  min-width: 530px;
-  min-height: 140px;
-  max-height: 150px;
+    max-width: 530px;
+    min-width: 530px;
+    min-height: 140px;
+    max-height: 150px;
 }
 
 .btn-enviar {
-  padding: 15px;
-  font-size: 16px;
-  border: none;
-  background: #2b2c2c;
-  color: white;
-  border-radius: 3px;
-  cursor: pointer;
-  transition: all 0.4s;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    background: #2b2c2c;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.4s;
 }
 
 .btn-enviar:hover {
-  background: #565;
+    background: #565;
 }
 
 .contact-info {
-  width: 400px;
-  margin: auto;
-  margin-bottom: 50px;
-  text-align: center;
+    width: 400px;
+    margin: auto;
+    margin-bottom: 50px;
+    text-align: center;
 }
 
 .contact-info ul li {
-  margin-bottom: 15px;
+    margin-bottom: 15px;
 }
 
 .contact-info h2 {
-  font-size: 30px;
-  padding: 10px;
+    font-size: 30px;
+    padding: 10px;
 }
 
 .contact-info h3 {
-  font-size: 20px;
-  padding: 5px;
+    font-size: 20px;
+    padding: 5px;
 }
 
 .contact-info p {
-  font-size: 16px;
-  padding: 15px;
+    font-size: 16px;
+    padding: 15px;
 }
 
 /* PAGINA UBICACION */
 /* PAGINA UBICACION */
 .ubi {
-  height: 600px;
-  display: flex;
-  flex-direction: column;
-  background-color: #2b2c2c;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    background-color: #2b2c2c;
 }
 
 .ubi p {
-  text-align: center;
-  font-size: 25px;
-  margin-top: 35px;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 35px;
 }
 
 .ubi iframe {
-  width: 600px;
-  height: 450px;
-  margin: auto;
+    width: 600px;
+    height: 450px;
+    margin: auto;
 }
 
 /* RESPONSIVE MOBILE */
 /* DISEÑIO RESPONSIVO */
 @media (max-width: 768px) {
-  /*HEADER*/
-  .mostrar-menu,
-  .esconder-menu {
+/*HEADER*/
+.mostrar-menu,
+.esconder-menu {
     display: block;
-  }
-  .navbar {
+}
+.navbar {
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -451,74 +451,74 @@
     padding: 100px 0;
     z-index: 100;
     transition: 0.8s;
-  }
-  .navbar ul {
+}
+.navbar ul {
     display: block;
-  }
-  .navbar ul li {
+}
+.navbar ul li {
     padding: 20px;
-  }
-  .esconder-menu {
+}
+.esconder-menu {
     position: absolute;
     top: 40px;
     right: 40px;
-  }
-  #check:checked ~ .navbar {
+}
+#check:checked ~ .navbar {
     right: 0;
-  }
-  /*SECTION COMIDAS*/
-  .block-flex {
+}
+/*SECTION COMIDAS*/
+.block-flex {
     flex-direction: column;
-  }
-  .op1 {
+}
+.op1 {
     flex-direction: column;
-  }
-  .footer-container {
+}
+.footer-container {
     flex-direction: column;
     text-align: center;
-  }
-  .footer-nav {
+}
+.footer-nav {
     padding: 30px 90px;
-  }
-  /*PAGINA MENÚ*/
-  .menu-cont {
+}
+/*PAGINA MENÚ*/
+.menu-cont {
     flex-direction: column;
     align-items: center;
     text-align: center;
-  }
-  .menu-cont img {
+}
+.menu-cont img {
     margin: 15px 0;
-  }
-  .menu-cont_beb {
+}
+.menu-cont_beb {
     flex-direction: column;
     align-items: center;
     text-align: center;
-  }
-  .menu-cont_beb img {
+}
+.menu-cont_beb img {
     margin: 15px 0;
-  }
-  /*PAGINA RESERVACIONES*/
-  .button p {
+}
+/*PAGINA RESERVACIONES*/
+.button p {
     text-align: center;
-  }
+}
   /* PAGINA CONTACTO */
-  .contact-input {
+.contact-input {
     width: 400px;
-  }
-  .contact-input textarea {
+}
+.contact-input textarea {
     min-width: 400px;
-  }
-  .contact-container {
+}
+.contact-container {
     flex-direction: column;
-  }
+}
   /* PAGINA UBICACION */
-  .header-titulo {
+.header-titulo {
     text-align: center;
-  }
-  .ubi iframe {
+}
+.ubi iframe {
     width: 400px;
     height: 250px;
-  }
+}
 }
 
 /*# sourceMappingURL=style.css.map */
